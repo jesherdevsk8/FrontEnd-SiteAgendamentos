@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/logo-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styleOK.css">    
+
+    <title>Bora Agendar</title>
+</head>
+<body>
+
+    <nav>
+        <img src="img/logo.png" alt="Logo do Site">
+        
+        <button class="menu-sanduiche">&#9776;</button>      
+
+        <a href="#Negocios">Negócios</a>
+        <a class="botao-cadastre" href="#Cadastre">Cadastre seu negócio</a>
+        <a class="login" href="#Login">Login</a>
+    </nav>   
+
+    <!-- CAMPO DE BUSCA -->
+    <section id="busca">
+        <form class="formBusca">
+            <fieldset>
+                <label for="agendar">O que Agendar</label>
+                <select name="opcoes" required>
+                    <option selected disabled value="" >Selecione</option>
+                    <option>Barbearia</option>
+                    <option>Manicure</option>
+                    <option>Entregas</option>
+                </select>
+                <label for="name">Nome do Cliente</label>
+                <input type="text" name="nomeCliente" id="nome" value="">
+
+                <button class="botao-acessar"type="submit" onsubmit="">Acessar</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- FORMULARIO DE CADASTRO -->
+    <section id="Cadastre">
+        <h1>CADASTRE-SE AGORA</h1>
+
+        <form>
+            <div>
+                <label for="usuario">Nome Do Usuário*</label>
+                <input type="text" name="usuario" id="usuario" value="Nome do Usuário*">
+            </div>
+
+            <fieldset class="grupo">
+                <div>
+                    <label for="nome">Nome De Contato*</label>
+                    <input type="text" name="nome" id="nameCompleto" value="Nome de Contato*">
+                    <label for="telefone">Telefone De Contato*</label>
+                    <input type="text" name="Telefone" id="Telefone" value="Telefone de Contato*">               
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div>
+                    <label for="email">Email Para Acesso*</label>
+                    <input type="text" name="email" id="name" value="Email para Acesso*">
+                    <label for="senha">Senha (Minimo de 6 caracteres)*</label>
+                    <input type="text" name="contato" id="contato" value="Senha*">               
+                </div>
+            </fieldset>
+
+            <button class="botao" type="submit" onsubmit="">Cadastrar</button>
+        </form>
+    </section>  
+    
+</body>
+</html>
